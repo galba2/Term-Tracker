@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Term-Tracker</string>
+    <string name="action_terms">Terms</string>
+    <string name="action_courses">Courses</string>
+    <string name="action_assessments">Assessments</string>
+
+    <string-array name="spinner_items">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan to Take</item>
+    </string-array>
+</resources>

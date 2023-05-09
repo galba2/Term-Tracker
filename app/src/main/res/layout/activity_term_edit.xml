@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermEditActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edit_term_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Title: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/edit_term_start_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintStart_toStartOf="@+id/edit_term_title_view"
+                app:layout_constraintTop_toTopOf="@+id/edit_term_start_datepicker" />
+
+            <TextView
+                android:id="@+id/edit_term_finish_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintStart_toStartOf="@+id/edit_term_title_view"
+                app:layout_constraintTop_toTopOf="@+id/edit_term_finish_datepicker" />
+
+            <EditText
+                android:id="@+id/edit_term_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="14"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toEndOf="@+id/edit_term_start_view"
+                app:layout_constraintTop_toTopOf="@+id/edit_term_title_view" />
+
+            <DatePicker
+                android:id="@+id/edit_term_start_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                app:layout_constraintStart_toStartOf="@+id/edit_term_title"
+                app:layout_constraintTop_toBottomOf="@+id/edit_term_title"/>
+
+            <DatePicker
+                android:id="@+id/edit_term_finish_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="143dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/edit_term_title"
+                app:layout_constraintTop_toBottomOf="@+id/edit_term_start_datepicker" />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:maxImageSize="101dp"
+        app:fabCustomSize="101dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/floating_air_button_save_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:maxImageSize="101dp"
+        app:fabCustomSize="101dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floating_action_button_save"
+        app:srcCompat="@drawable/floating_air_button_delete_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

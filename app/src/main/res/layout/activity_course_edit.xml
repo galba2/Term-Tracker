@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/edit_course_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:text="Title: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_course_title"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/edit_course_start_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Start: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintTop_toTopOf="@+id/edit_course_start_datepicker"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title_view" />
+
+            <TextView
+                android:id="@+id/edit_course_finish_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintTop_toTopOf="@+id/edit_course_finish_datepicker"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title_view" />
+
+            <TextView
+                android:id="@+id/edit_course_status_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_course_status_spinner"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title_view" />
+
+            <TextView
+                android:id="@+id/edit_course_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_course_name"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title_view" />
+
+            <TextView
+                android:id="@+id/edit_course_phone_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_course_phone"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title_view" />
+
+            <TextView
+                android:id="@+id/edit_course_email_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_course_email"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title_view" />
+
+            <EditText
+                android:id="@+id/edit_course_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintStart_toEndOf="@+id/edit_course_phone_view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <DatePicker
+                android:id="@+id/edit_course_start_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_title"
+                app:layout_constraintTop_toBottomOf="@+id/edit_course_title"/>
+
+            <DatePicker
+                android:id="@+id/edit_course_finish_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_start_datepicker"
+                app:layout_constraintTop_toBottomOf="@+id/edit_course_start_datepicker"/>
+
+
+            <Spinner
+                android:id="@+id/edit_course_status_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_finish_datepicker"
+                app:layout_constraintTop_toBottomOf="@+id/edit_course_finish_datepicker" />
+
+            <EditText
+                android:id="@+id/edit_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_status_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/edit_course_status_spinner" />
+
+            <EditText
+                android:id="@+id/edit_course_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_name"
+                app:layout_constraintTop_toBottomOf="@+id/edit_course_name" />
+
+            <EditText
+                android:id="@+id/edit_course_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="143dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/edit_course_phone"
+                app:layout_constraintTop_toBottomOf="@+id/edit_course_phone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:maxImageSize="101dp"
+        app:fabCustomSize="101dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/floating_air_button_save_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:maxImageSize="101dp"
+        app:fabCustomSize="101dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floating_action_button_save"
+        app:srcCompat="@drawable/floating_air_button_delete_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

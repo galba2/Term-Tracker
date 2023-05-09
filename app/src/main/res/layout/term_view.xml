@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recyclerview_term_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3BBE4"
+        android:layout_marginTop="3dp"
+        android:text="TERM TITLE"
+        android:textColor="@color/black"
+        android:textSize="27sp"/>
+
+    <TextView
+        android:id="@+id/recycler_term_date_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3BBE4"
+        android:layout_marginBottom="5dp"
+        android:text="TERM DATE"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+</LinearLayout>

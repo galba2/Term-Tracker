@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="DetailsActivity.CourseDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/course_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COURSE TITLE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="33dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/course_details_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="19dp"
+                android:text="Start:"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_title" />
+
+            <TextView
+                android:id="@+id/course_details_start_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:text="dd/mm/yy"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@id/course_details_status"
+                app:layout_constraintTop_toTopOf="@+id/course_details_start" />
+
+            <TextView
+                android:id="@+id/course_details_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="End:"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@+id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_start" />
+
+            <TextView
+                android:id="@+id/course_details_end_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dd/mm/yy"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start_input"
+                app:layout_constraintTop_toTopOf="@+id/course_details_end" />
+
+            <TextView
+                android:id="@+id/course_details_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Status: "
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_end" />
+
+            <TextView
+                android:id="@+id/course_details_status_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$$$"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start_input"
+                app:layout_constraintTop_toTopOf="@+id/course_details_status" />
+
+            <TextView
+                android:id="@+id/course_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Name: "
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_status" />
+
+            <TextView
+                android:id="@+id/course_details_name_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$$$"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start_input"
+                app:layout_constraintTop_toTopOf="@+id/course_details_name" />
+
+            <TextView
+                android:id="@+id/course_details_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Phone: "
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_name" />
+
+            <TextView
+                android:id="@+id/course_details_phone_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="###-###-####"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start_input"
+                app:layout_constraintTop_toTopOf="@+id/course_details_phone" />
+
+            <TextView
+                android:id="@+id/course_details_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Email: "
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_phone" />
+
+            <TextView
+                android:id="@+id/course_details_email_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$$$@$$$.$$$"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start_input"
+                app:layout_constraintTop_toTopOf="@+id/course_details_email" />
+
+            <TextView
+                android:id="@+id/course_details_assessment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Assessement: "
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_email" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/course_details_recycler_assessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/course_details_assessment"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_assessment" />
+
+            <TextView
+                android:id="@+id/course_details_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Note: "
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="@id/course_details_start"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_recycler_assessment" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/course_details_recycler_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="143dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/course_details_note"
+                app:layout_constraintTop_toBottomOf="@+id/course_details_note" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:maxImageSize="85dp"
+        app:fabCustomSize="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/floating_air_button_note_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_assessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:maxImageSize="85dp"
+        app:fabCustomSize="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floating_action_button_note"
+        app:srcCompat="@drawable/floating_air_button_assessment_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        app:maxImageSize="85dp"
+        app:fabCustomSize="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floating_action_button_assessment"
+        app:srcCompat="@drawable/floating_air_button_edit_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
